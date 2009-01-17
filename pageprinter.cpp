@@ -37,7 +37,6 @@ void PagePrinter::doPrint(bool ok)
    }
 
    this->settings()->setAttribute(QWebSettings::PrintBackgrounds, true);
-   //this->settings()->setAttribute(QWebSettings::AutoLoadImages, true);
    QPrinter *printer = new QPrinter(QPrinterInfo::defaultPrinter(), QPrinter::ScreenResolution);
    printer->setFontEmbeddingEnabled(true);
    printer->setOutputFormat(QPrinter::PdfFormat);
