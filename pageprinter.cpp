@@ -36,7 +36,7 @@ void PagePrinter::doPrint(bool ok)
        QCoreApplication::exit(1);
    }
 
-   this->settings()->setAttribute(QWebSettings::PrintBackgrounds, true);
+   this->settings()->setAttribute(QWebSettings::PrintElementBackgrounds, true);
    this->settings()->setAttribute(QWebSettings::JavascriptEnabled, false);
    QPrinter *printer = new QPrinter(QPrinterInfo::defaultPrinter(), QPrinter::ScreenResolution);
    printer->setFontEmbeddingEnabled(true);
